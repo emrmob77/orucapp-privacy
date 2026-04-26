@@ -29,7 +29,7 @@
 <!-- ================= ENGLISH ================= -->
 <section id="en">
 <h1>Privacy Policy — Orucapp</h1>
-<p class="updated">Last updated: April 19, 2026</p>
+<p class="updated">Last updated: April 26, 2026</p>
 
 <p>Orucapp ("we", "the app") is an intermittent fasting and nutrition tracking application. We take your privacy seriously. This policy describes what data we collect, how we use it, and your rights.</p>
 
@@ -54,33 +54,47 @@
 <h2>4. Third-Party Services</h2>
 <ul>
   <li><strong>Apple (Sign in with Apple, CloudKit, HealthKit, StoreKit)</strong> — governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-  <li><strong>OpenRouter (optional AI features)</strong> — if you use AI meal suggestions or AI coach, your prompt (e.g. dietary preferences, meal names) is sent to OpenRouter for inference. No personally identifying information (name, email, Apple ID) is transmitted.</li>
+  <li><strong>OpenRouter (optional AI features)</strong> — see Section 5 for the full disclosure.</li>
 </ul>
 
-<h2>5. Data Retention &amp; Deletion</h2>
+<h2>5. Optional AI Features (OpenRouter)</h2>
+<p>Orucapp's AI-powered features (weekly meal plan, fridge recipe suggestion, recipe replacement, food photo recognition) are <strong>opt-in</strong>. You see an in-app disclosure the first time you tap one of these features and must tap <em>Accept and Continue</em> before any data is sent.</p>
+<p><strong>Service used:</strong> OpenRouter Inc. (<a href="https://openrouter.ai">openrouter.ai</a>) — model <code>deepseek/deepseek-v3.2</code>. OpenRouter forwards the request to the underlying model provider on a per-call basis.</p>
+<p><strong>What is sent:</strong></p>
+<ul>
+  <li>Profile basics needed to compute calorie/macro targets — age, gender, height, weight, weight goal, dietary preference, fasting plan.</li>
+  <li>For meal-plan / recipe features: meal preferences and ingredient names you type.</li>
+  <li>For food-photo recognition: the photo you take, downscaled, encoded as base64.</li>
+</ul>
+<p><strong>What is NOT sent:</strong> your name, email address, Apple User ID, contacts, location, HealthKit values, weight history, or meal log.</p>
+<p><strong>How it is sent:</strong> over HTTPS, only when you trigger an AI feature. We do not run servers; the request goes directly from your device to OpenRouter.</p>
+<p><strong>Equal protection:</strong> OpenRouter's <a href="https://openrouter.ai/privacy">privacy policy</a> and the underlying model provider's terms apply. Per OpenRouter's policy, prompts are not used for model training.</p>
+<p><strong>Revoking consent:</strong> Profile → Settings → AI data sharing toggle. Once revoked, AI features stop sending any data and silently degrade (e.g. the daily tip falls back to a hard-coded message).</p>
+
+<h2>6. Data Retention &amp; Deletion</h2>
 <p>Your data stays in your private iCloud as long as you use the app. You can delete all data at any time:</p>
 <ul>
   <li>Inside the app: Settings → Delete Account</li>
   <li>iCloud: Settings → [your name] → iCloud → Manage Storage → Orucapp → Delete Data</li>
 </ul>
 
-<h2>6. Your Rights</h2>
+<h2>7. Your Rights</h2>
 <p>You have the right to access, correct, export, or delete your personal data. Because the data lives in your own iCloud, you already control it directly. For support, email <a href="mailto:emrmob7@gmail.com">emrmob7@gmail.com</a>.</p>
 
-<h2>7. Children</h2>
+<h2>8. Children</h2>
 <p>Orucapp is not directed at children under 13. We do not knowingly collect data from children.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 <p>If we update this policy, the "Last updated" date above will change. Continued use of the app after an update means you accept the revised policy.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>Questions? Email <a href="mailto:emrmob7@gmail.com">emrmob7@gmail.com</a>.</p>
 </section>
 
 <!-- ================= TURKISH ================= -->
 <section id="tr">
 <h1>Gizlilik Politikası — Orucapp</h1>
-<p class="updated">Son güncelleme: 19 Nisan 2026</p>
+<p class="updated">Son güncelleme: 26 Nisan 2026</p>
 
 <p>Orucapp ("biz", "uygulama"), aralıklı oruç ve beslenme takip uygulamasıdır. Gizliliğinize önem veriyoruz. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
 
@@ -105,26 +119,40 @@
 <h2>4. Üçüncü Taraf Hizmetler</h2>
 <ul>
   <li><strong>Apple (Apple ile Giriş, CloudKit, HealthKit, StoreKit)</strong> — <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a>'na tabidir.</li>
-  <li><strong>OpenRouter (opsiyonel AI özellikleri)</strong> — AI öğün önerileri veya AI koç kullanırsanız, prompt'unuz (örn. diyet tercihleri, öğün adları) çıkarım için OpenRouter'a gönderilir. Kimlik belirleyici hiçbir bilgi (ad, e-posta, Apple ID) iletilmez.</li>
+  <li><strong>OpenRouter (opsiyonel AI özellikleri)</strong> — tam açıklama için 5. bölüme bakın.</li>
 </ul>
 
-<h2>5. Veri Saklama ve Silme</h2>
+<h2>5. Opsiyonel AI Özellikleri (OpenRouter)</h2>
+<p>Orucapp'in yapay zekâ destekli özellikleri (haftalık öğün planı, buzdolabı tarif önerisi, tarif değiştirme, yemek fotoğrafı tanıma) <strong>opsiyoneldir</strong>. Bu özelliklerden birini ilk kez kullandığınızda uygulama içinde bir bilgilendirme görürsünüz ve herhangi bir veri gönderilmeden önce <em>Kabul Et ve Devam Et</em>'e basmanız gerekir.</p>
+<p><strong>Kullanılan servis:</strong> OpenRouter Inc. (<a href="https://openrouter.ai">openrouter.ai</a>) — <code>deepseek/deepseek-v3.2</code> modeli. OpenRouter her çağrıyı ilgili model sağlayıcısına yönlendirir.</p>
+<p><strong>Gönderilen veriler:</strong></p>
+<ul>
+  <li>Kalori/makro hedefini hesaplamak için gerekli temel profil bilgileri — yaş, cinsiyet, boy, kilo, hedef kilo, beslenme tercihi, oruç planı.</li>
+  <li>Öğün planı / tarif özellikleri için: yazdığınız öğün tercihleri ve malzeme isimleri.</li>
+  <li>Yemek fotoğrafı tanıma için: çektiğiniz fotoğraf, küçültülerek base64 olarak kodlanmış halde.</li>
+</ul>
+<p><strong>Gönderilmeyen veriler:</strong> ad, e-posta adresi, Apple Kullanıcı ID'si, rehber, konum, HealthKit değerleri, kilo geçmişi veya öğün kayıtları.</p>
+<p><strong>Nasıl gönderilir:</strong> HTTPS üzerinden, yalnızca bir AI özelliğini siz başlattığınızda. Bizim sunucumuz yoktur; istek doğrudan cihazınızdan OpenRouter'a gider.</p>
+<p><strong>Eşdeğer koruma:</strong> OpenRouter'ın <a href="https://openrouter.ai/privacy">gizlilik politikası</a> ve alttaki model sağlayıcısının şartları geçerlidir. OpenRouter politikasına göre prompt'lar model eğitiminde kullanılmaz.</p>
+<p><strong>Onayı geri çekme:</strong> Profil → Ayarlar → AI veri paylaşımı düğmesi. Geri çekildiğinde AI özellikleri veri göndermeyi bırakır ve sessizce devre dışı kalır (örn. günlük ipucu sabit bir mesaja düşer).</p>
+
+<h2>6. Veri Saklama ve Silme</h2>
 <p>Verileriniz, uygulamayı kullandığınız sürece özel iCloud'unuzda kalır. Tüm verilerinizi istediğiniz zaman silebilirsiniz:</p>
 <ul>
   <li>Uygulama içinden: Ayarlar → Hesabı Sil</li>
   <li>iCloud'dan: Ayarlar → [adınız] → iCloud → Depolamayı Yönet → Orucapp → Verileri Sil</li>
 </ul>
 
-<h2>6. Haklarınız</h2>
+<h2>7. Haklarınız</h2>
 <p>Kişisel verilerinize erişme, düzeltme, dışa aktarma veya silme hakkına sahipsiniz. Veriler kendi iCloud'unuzda olduğu için zaten doğrudan sizin kontrolünüzde. Destek için <a href="mailto:emrmob7@gmail.com">emrmob7@gmail.com</a>.</p>
 
-<h2>7. Çocuklar</h2>
+<h2>8. Çocuklar</h2>
 <p>Orucapp, 13 yaş altı çocuklara yönelik değildir. Çocuklardan bilerek veri toplamıyoruz.</p>
 
-<h2>8. Politika Değişiklikleri</h2>
+<h2>9. Politika Değişiklikleri</h2>
 <p>Bu politikayı güncellersek yukarıdaki "Son güncelleme" tarihi değişir. Güncellemeden sonra uygulamayı kullanmaya devam etmeniz, revize politikayı kabul ettiğiniz anlamına gelir.</p>
 
-<h2>9. İletişim</h2>
+<h2>10. İletişim</h2>
 <p>Sorularınız için: <a href="mailto:emrmob7@gmail.com">emrmob7@gmail.com</a>.</p>
 </section>
 
